@@ -268,7 +268,7 @@ function montarPDF(doc){
 
   doc.setFont('helvetica','bold'); doc.setFontSize(9.2);
   doc.text('Assinatura do responsável:', mx, y);
-  const xAssinatura = mx + doc.getTextWidth('Assinatura do responsável:') + 2;
+  const xAssinatura = mx + doc.getTextWidth('Assinatura do responsável pelo aluno:') + 2;
   doc.setDrawColor(80);
   doc.line(xAssinatura, y+1, pageW-mx, y+1);
   footer();
